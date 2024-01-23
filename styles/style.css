@@ -401,8 +401,47 @@ button {
 
 .content__list-item-paragraph {
   color: var(--paragraph-color);
+  font-weight: 400;
+  font-family: var(--main-font);
+  line-height: 23.4px;;
 }
 
 .link {
   text-shadow: 2px 1px 0 var(--accent-color);
+}
+
+@media (width >= 768px) {
+  .content-section-middle {
+    flex-direction: column;
+    margin-top: 80px;
+    gap: 0;
+}
+}
+
+@media (width < 768px) {
+  .content__title-middle {
+    margin-top: 50px;
+  }
+}
+
+@media (width >= 1024px) {
+  .content__list-middle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (width < 768px) {
+  .content__list-item-middle {
+    gap: 9px;
+  }
+}
+
+@media (width >= 768px) {
+  .content__list-item-middle {
+    gap: 10px;
+    min-width: 100%;
+    margin-top: 20px;
+  }
 }
