@@ -4,8 +4,9 @@
 */
 :root {
   --accent-color: #FF0070;
-  --text-color: #F1B2CE;
+  --paragraph-color: #F1B2CE;
   --bg-color: #000028;
+  --bg-color-rgb: rgb(0,0,40);
   --text-with-shadow-color: #DB00FF;
   --main-font: 'IBM Plex mono';
   --bg-image: url(/images/cover-image-dark.png);
