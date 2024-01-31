@@ -3,10 +3,139 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root.theme-light {
+  --accent-color: #ff8dcb;
+  --paragraph-color: #353430;
+  --bg-color: #fff1f7;
+  --bg-color-rgb: rgb(255, 241, 247);
+  --text-with-shadow-color: #ffc2e6;
+  --main-font: "IBM Plex mono";
+  --bg-image: url(/images/cover-image-light.png);
+  --border-hover-color: rgba(50, 49, 45, 0.4);
+  --underline-color: #353430;
+  --menu-button-color: #353430;
+  --rec-color: transparent;
+  --header-paragraph-color: #353430;
+  --decorated-zone-color: #353430;
+  --content-titles: #353430;
+  --main-titles: #353430;
+  --content-title-subtitle-color: #353430;
+  --display-camera-light: none;
+}
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --accent-color: #ff8dcb;
+  --paragraph-color: #353430;
+  --bg-color: #fff1f7;
+  --bg-color-rgb: rgb(255, 241, 247);
+  --text-with-shadow-color: #ffc2e6;
+  --main-font: "IBM Plex mono";
+  --bg-image: url(/images/cover-image-light.png);
+  --border-hover-color: rgba(50, 49, 45, 0.4);
+  --underline-color: #353430;
+  --menu-button-color: #353430;
+  --rec-color: transparent;
+  --header-paragraph-color: #353430;
+  --decorated-zone-color: #353430;
+  --content-titles: #353430;
+  --main-titles: #353430;
+  --content-title-subtitle-color: #353430;
+  --display-camera-light: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #ff8dcb;
+    --paragraph-color: #353430;
+    --bg-color: #fff1f7;
+    --bg-color-rgb: rgb(255, 241, 247);
+    --text-with-shadow-color: #ffc2e6;
+    --main-font: "IBM Plex mono";
+    --bg-image: url(/images/cover-image-light.png);
+    --border-hover-color: rgba(50, 49, 45, 0.4);
+    --underline-color: #353430;
+    --menu-button-color: #353430;
+    --rec-color: transparent;
+    --header-paragraph-color: #353430;
+    --decorated-zone-color: #353430;
+    --content-titles: #353430;
+    --main-titles: #353430;
+    --content-title-subtitle-color: #353430;
+    --display-camera-light: none;
+  }
+}
+
+.header__theme-menu-button {
+  color: var(--menu-button-color);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+  pointer-events: none;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--border-hover-color);
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--menu-button-color);
+  pointer-events: none;
+}
+
+.header__theme-menu::before {
+  content: "REC";
+  position: absolute;
+  color: var(--rec-color);
+  font-family: var(--main-font);
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--decorated-zone-color);
+  border-right: 1px solid var(--decorated-zone-color);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--decorated-zone-color);
+  border-left: 1px solid var(--decorated-zone-color);
+}
+
+.header__theme-menu::after {
+  content: "";
+  position: absolute;
+  display: var(--display-camera-light);
+  width: 17px;
+  height: 15px;
+  background-image: url(/images/Ellipse\ 4.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(0px 0px 4px var(--accent-color));
+}
+
+.header-paragraph {
+  color: var(--header-paragraph-color);
+}
+
+.main-titles {
+  color: var(--main-titles);
+}
+
+.content__title {
+  color: var(--content-titles);
+}
+
+.content__title-subtitle {
+  color: var(--content-title-subtitle-color);
 }

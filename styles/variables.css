@@ -3,11 +3,21 @@
   и их переопределение под различные устройства
 */
 :root {
-  --accent-color: #FF0070;
-  --paragraph-color: #F1B2CE;
+  --accent-color: #ff0070;
+  --paragraph-color: #f1b2ce;
   --bg-color: #000028;
-  --bg-color-rgb: rgb(0,0,40);
-  --text-with-shadow-color: #DB00FF;
-  --main-font: 'IBM Plex mono';
+  --bg-color-rgb: rgb(0, 0, 40);
+  --text-with-shadow-color: #db00ff;
+  --main-font: "IBM Plex mono";
   --bg-image: url(/images/cover-image-dark.png);
+  --border-hover-color: rgba(255, 0, 112, 0.4);
+  --underline-color: #f1b2ce;
+  --menu-button-color: #ff0070;
+  --rec-color: #ff0070;
+  --header-paragraph-color: #000028;
+  --decorated-zone-color: #ff0070;
+  --content-titles: #ff0070;
+  --main-titles: #000028;
+  --content-title-subtitle-color: #000028;
+  --display-camera-light: block;
 }
