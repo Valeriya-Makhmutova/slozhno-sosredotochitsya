@@ -73,11 +73,6 @@
   color: var(--menu-button-color);
 }
 
-.header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
-  pointer-events: none;
-}
-
 .header__theme-menu-button:hover {
   outline: 1px solid var(--border-hover-color);
 }
