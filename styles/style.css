@@ -316,7 +316,7 @@ button {
   gap: 10px;
 }
 
-@media (width >=768px) {
+@media (width >=1024px) {
   .content__list-item {
     inline-size: 61vw;
   }
@@ -336,10 +336,17 @@ button {
 
 .main-titles {
   color: var(--main-titles);
+  font-family: var(--main-font), monospace;
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
   line-height: 23.4px;
+}
+
+@media (width >=768px) and (width < 1024px) {
+  .main-titles {
+    min-inline-size: 236px;
+  }
 }
 
 .content__list-item-title {
@@ -453,7 +460,7 @@ button {
   }
 }
 
-@media (width >=768px) {
+@media (width >=1024px) {
   .content-section-third-container {
     max-inline-size: 52vw;
   }
