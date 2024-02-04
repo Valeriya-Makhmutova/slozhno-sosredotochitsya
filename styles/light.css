@@ -15,7 +15,7 @@
   --bg-color-rgb: rgb(255, 241, 247);
   --text-with-shadow-color: #ffc2e6;
   --main-font: "IBM Plex mono";
-  --bg-image: url(/images/cover-image-light.png);
+  --bg-image: url(../images/cover-image-light.png);
   --border-hover-color: rgba(50, 49, 45, 0.4);
   --underline-color: #353430;
   --menu-button-color: #353430;
@@ -43,7 +43,7 @@
     --bg-color-rgb: rgb(255, 241, 247);
     --text-with-shadow-color: #ffc2e6;
     --main-font: "IBM Plex mono";
-    --bg-image: url(/images/cover-image-light.png);
+    --bg-image: url(../images/cover-image-light.png);
     --border-hover-color: rgba(50, 49, 45, 0.4);
     --underline-color: #353430;
     --menu-button-color: #353430;
